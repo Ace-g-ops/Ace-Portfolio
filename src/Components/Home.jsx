@@ -56,7 +56,6 @@ const Home = () => {
           cursorColor="#1da1f2"
           multiText={[
             'Web Developer',
-            "Don't Forget to Scroll"
           ]}
           multiTextLoop={true}
           multiTextDelay={1500}
