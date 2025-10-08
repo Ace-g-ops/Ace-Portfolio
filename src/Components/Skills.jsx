@@ -2,7 +2,7 @@ import React from 'react'
 
 import '../styles/Skills.css'
 
-import { SiJavascript, SiHtml5, SiCss3,  SiNodedotjs, SiMongodb} from 'react-icons/si'
+import { SiJavascript, SiHtml5, SiCss3,  SiNodedotjs, SiMongodb, SiLaravel, SiPhpmyadmin, SiPhp} from 'react-icons/si'
 
 const Skills = () => {
   return (
@@ -28,6 +28,18 @@ const Skills = () => {
         <div className="mon">
           <SiMongodb />
           <p>MongoDB</p>
+        </div>
+         <div className="laravel">
+          <SiLaravel />
+          <p>Laravel</p>
+        </div>
+        <div className="phpmyadmin">
+          <SiPhpmyadmin />
+          <p>Phpmyadmin</p>
+        </div>
+         <div className="php">
+          <SiPhp />
+          <p>Php</p>
         </div>
       </div>
     </div>

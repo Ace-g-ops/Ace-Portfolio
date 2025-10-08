@@ -1,7 +1,7 @@
 import './styles/App.css';
 
 import { useState } from 'react';
-import { animateScroll } from 'react-scroll';
+// import { animateScroll } from 'react-scroll';
 import { Fade } from 'react-awesome-reveal';
 
 // components
@@ -13,23 +13,20 @@ import About from './Components/About';
 import Skills from './Components/Skills';
 import Mail from './Components/Mail';
 
-// icon
-import { CgArrowLongUp } from 'react-icons/cg';
+// // icon
+// import { CgArrowLongUp } from 'react-icons/cg';
 
 function App() {
-  const [isDarkMode, setIsDarkMode] = useState(true);
+  const [isDarkMode] = useState(true);
 
-  const toggleTheme = () => {
-    setIsDarkMode(prevMode => !prevMode);
-  }
-
+ 
   return (
-    <div className={`App ${!isDarkMode ?'light' : ''}`}>
+    <div className={`App`}>
       <div>
-        <Nav isDarkMode={isDarkMode} handleToggle={toggleTheme} />
+        <Nav isDarkMode={isDarkMode} />
         <Home />
       </div>
-      <div className={`dark ${!isDarkMode ?'light' : ''}`}>
+      <div className={`dark`}>
         <Fade fraction={.2} triggerOnce>
           <Projects />
         </Fade>
@@ -48,12 +45,12 @@ function App() {
           <Mail />
         </Fade>
       </div>
-      <div className={`dark ${!isDarkMode ?'light' : ''}`}>npm 
+      <div className={`dark`}> 
         <Fade fraction={.2} triggerOnce>
-          <p>Thank you for scrolling⚡</p>
-          <div className='arrow' onClick={() => animateScroll.scrollToTop()}>
+          {/* <p>Thank you for scrolling⚡</p> */}
+          {/* <div className='arrow' onClick={() => animateScroll.scrollToTop()}>
             <CgArrowLongUp />
-          </div>
+          </div> */}
         </Fade>
       </div>
     </div>

@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 import { Link } from 'react-scroll';
 import { GiHamburgerMenu } from 'react-icons/gi'
-import { FaSun, FaMoon } from 'react-icons/fa'
+// import { FaSun, FaMoon } from 'react-icons/fa'
 
 import '../styles/Nav.css'
 
@@ -44,7 +44,7 @@ const Nav = ({ isDarkMode, handleToggle }) => {
             {nav}
           </div>
           <div className={`theme-switch ${!isDarkMode ?'light' : ''}`} onClick={handleToggle} >
-            {isDarkMode ? <FaMoon /> : <FaSun />}
+            {/* {isDarkMode ? <FaMoon /> : <FaSun />} */}
           </div>
         </div>
       </div>
