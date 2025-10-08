@@ -5,19 +5,19 @@ import "../styles/Projects.css";
 const Projects = () => {
   const projectsInfo = [
     {
-      name: "Project 1",
-      desc: "congue quisque egestas diam in arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat sed",
-      liveLink: "website url",
+      name: "CraftConnect",
+      desc: "An online platform that connects users with local artisans and service providers. Users can search for services, view profiles, and book appointments. The platform also allows artisans to create profiles, showcase their skills, and manage bookings.",
+      liveLink: "https://craftconnect-3.onrender.com/",
       githubLink: "https://github.com/",
-      techs: ["HTML", "CSS", "TypeScript"],
+      techs: ["HTML", "CSS", "NODEJS", "EXPRESSJS", "MongoDB"],
       isOpenSource: true,
     },
     {
-      name: "Project 2",
+      name: "Geo-Heat",
       desc: "congue quisque egestas diam in arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat sed",
-      liveLink: "website url",
-      githubLink: "https://github.com/",
-      techs: ["React", "Node", "MongoDB", "Socket.io", "Redux"],
+      liveLink: "https://geo-heat.vercel.app/",
+      githubLink: "https://github.com/Ace-g-ops/Geo--Heat",
+      techs: ["React","MongoDB",  "Python"],
       isOpenSource: true,
     },
   ];
